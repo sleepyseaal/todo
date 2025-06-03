@@ -1,3 +1,5 @@
+console.log("🚀 Starting app...");
+
 const app = require("./app");
 const PORT = process.env.PORT || 3000;
 
