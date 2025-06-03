@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "cross-env NODE_ENV=development node --watch server.js",
     "test": "cross-env NODE_ENV=test jest",
     "migrate:test": "cross-env NODE_ENV=test prisma migrate deploy"
