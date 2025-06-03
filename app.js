@@ -22,7 +22,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/lists", authMiddleware, ListsRouter);
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.status(200).send("🚀 To-Do List API is running");
 });
 
 module.exports = app;
