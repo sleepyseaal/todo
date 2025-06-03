@@ -21,4 +21,8 @@ app.use((req, res, next) => {
 app.use("/api/auth", authRouter);
 app.use("/api/lists", authMiddleware, ListsRouter);
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 module.exports = app;
